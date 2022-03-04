@@ -365,6 +365,11 @@ H5P.TrueFalse = (function ($, Question) {
 
       // ... and buttons
       registerButtons();
+
+      // for xapi duration
+      if(!self.activityStartTime) {
+        self.activityStartTime = Date.now();
+      }
     };
 
     /**
@@ -451,6 +456,7 @@ H5P.TrueFalse = (function ($, Question) {
       self.removeFeedback();
       H5P.jQuery('.submit-answer-feedback').hide();
       toggleButtonState(State.ONGOING);
+      self.activityStartTime = Date.now();
     };
 
     /**
