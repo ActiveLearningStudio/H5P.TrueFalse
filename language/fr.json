@@ -47,6 +47,10 @@
           "default": "Vérifier"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Vérifier"
+        },
+        {
           "label": "Texte du bouton \"Voir la solution\"",
           "default": "Voir la solution"
         },

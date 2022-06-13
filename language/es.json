@@ -5,10 +5,10 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Medio opcional para mostrar arriba de la pregunta."
+          "description": "Medio opcional a mostrar arriba de la pregunta."
         },
         {
-          "label": "Deshabilitar zoom de imagen"
+          "label": "Deshabilitar acercamiento de imagen"
         }
       ]
     },
@@ -45,6 +45,10 @@
         {
           "label": "Texto para botón \"Comprobar\"",
           "default": "Comprobar"
+        },
+        {
+          "label": "Texto para botón \"Enviar\"",
+          "default": "Submit"
         },
         {
           "label": "Texto para botón \"Mostrar solución\"",
