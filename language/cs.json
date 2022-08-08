@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Volitelná média k zobrazení nad otázkou."
+          "description": "Volitelná média zobrazená nad otázkou."
         },
         {
           "label": "Zakázat zvětšení obrazu"
@@ -45,6 +45,10 @@
         {
           "label": "Text pro tlačítko \"Zkontrolovat\"",
           "default": "Zkontrolovat"
+        },
+        {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
         },
         {
           "label": "Text pro tlačítko \"Zobrazit řešení\"",

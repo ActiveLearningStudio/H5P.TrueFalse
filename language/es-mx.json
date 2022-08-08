@@ -5,10 +5,10 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Medio opcional para mostrar arriba de la pregunta."
+          "description": "Medio opcional a mostrar arriba de la pregunta."
         },
         {
-          "label": "Deshabilitar zoom de imagen"
+          "label": "Deshabilitar acercamiento de imagen"
         }
       ]
     },
@@ -45,6 +45,10 @@
         {
           "label": "Texto para botón \"Comprobar\"",
           "default": "Comprobar"
+        },
+        {
+          "label": "Texto para botón \"Enviar\"",
+          "default": "Submit"
         },
         {
           "label": "Texto para botón \"Mostrar solución\"",
@@ -117,7 +121,7 @@
       "label": "Diálogo de confirmación para Comprobar",
       "fields": [
         {
-          "label": "Texto de cabecera",
+          "label": "Texto del encabezado",
           "default": "¿Terminar?"
         },
         {
@@ -125,11 +129,11 @@
           "default": "¿Está seguro que desea terminar ?"
         },
         {
-          "label": "Texto del botón Cancelar",
+          "label": "Etiqueta botón Cancelar",
           "default": "Cancelar"
         },
         {
-          "label": "Texto del botón Terminar",
+          "label": "Etiqueta del botón Confirmar",
           "default": "Terminar"
         }
       ]
@@ -138,7 +142,7 @@
       "label": "Diálogo de confirmación Reintentar",
       "fields": [
         {
-          "label": "Texto de cabecera",
+          "label": "Texto del encabezado",
           "default": "¿Reintentar?"
         },
         {
@@ -146,11 +150,11 @@
           "default": "¿Está seguro que desea volver a intentarlo?"
         },
         {
-          "label": "Texto del botón Cancelar",
+          "label": "Etiqueta botón Cancelar",
           "default": "Cancelar"
         },
         {
-          "label": "Texto del botón Confirmar",
+          "label": "Etiqueta del botón Confirmar",
           "default": "Confirmar"
         }
       ]

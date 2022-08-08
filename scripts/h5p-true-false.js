@@ -50,7 +50,7 @@ H5P.TrueFalse = (function ($, Question) {
         falseText: 'False',
         score: 'You got @score of @total points',
         checkAnswer: 'Check',
-        //submitAnswer: "Submit",
+        submitAnswer: 'Submit',
         showSolutionButton: 'Show solution',
         tryAgain: 'Retry',
         wrongAnswerMessage: 'Wrong answer',
@@ -147,7 +147,7 @@ H5P.TrueFalse = (function ($, Question) {
       // submit button
       if (!params.currikisettings.disableSubmitButton && typeof self.parent == "undefined") {
         self.addButton(Button.SUBMIT_ANSWER, params.currikisettings.currikil10n.submitAnswer, function () {
-          
+
           H5P.jQuery('.h5p-question-submit-answers').hide();
           toggleButtonState(State.FINISHED_WRONG);
           self.triggerXAPIScored(self.getScore(), self.getMaxScore(), 'completed');
@@ -166,7 +166,7 @@ H5P.TrueFalse = (function ($, Question) {
           checkAnswer();
           triggerXAPIAnswered();
           H5P.jQuery('.h5p-question-submit-answers').show();
-          
+
         }, true, {
           'aria-label': params.l10n.a11yCheck
         }, {
@@ -175,13 +175,15 @@ H5P.TrueFalse = (function ($, Question) {
             l10n: params.confirmCheck,
             instance: self,
             $parentElement: $container
-          }
+          },
+          contentData: self.contentData,
+          textIfSubmitting: params.l10n.submitAnswer,
         });
       }
 
 
-      
-      
+
+
 
       // Try again button
       if (params.behaviour.enableRetry === true) {
@@ -357,6 +359,12 @@ H5P.TrueFalse = (function ($, Question) {
           if (media.params.sources) {
             // Register task video
             self.setVideo(media);
+          }
+        }
+        else if (type === 'H5P.Audio') {
+          if (media.params.files) {
+            // Register task audio
+            self.setAudio(media);
           }
         }
       }
